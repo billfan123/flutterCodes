@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/class3/class32.dart';
 import 'package:untitled/class3/class33.dart';
+import 'package:untitled/class3/class34.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       routes:{
         "new_page":(context)=>TapboxA(),
         "class_33":(context)=>TextA(),
+        "class_34":(context)=>Buttons(),
       } ,
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -110,6 +112,14 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 //导航到新路由
                 Navigator.pushNamed(context, "class_33");
+              },
+            ),
+            FlatButton(
+              child: Text("open class34"),
+              textColor: Colors.blue,
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "class_34");
               },
             ),
           ],
